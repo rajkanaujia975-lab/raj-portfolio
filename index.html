@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj Kanaujia | Data Analyst Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+header h1{
+    font-size:55px;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+    color:#94a3b8;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #334155;
+}
+
+nav a{
+    color:#e2e8f0;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:32px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    border:1px solid #334155;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(56,189,248,0.2);
+}
+
+.skills{
+    text-align:center;
+}
+
+.skills span{
+    display:inline-block;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:10px 18px;
+    margin:8px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.project{
+    margin-bottom:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid #334155;
+}
+
+.project:last-child{
+    border-bottom:none;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.center{
+    text-align:center;
+}
+
+a{
+    color:#38bdf8;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111827;
+    color:#94a3b8;
+    border-top:1px solid #334155;
+}
+
+.hero-buttons{
+    margin-top:25px;
+}
+
+.hero-buttons a{
+    margin:10px;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+ul{
+    padding-left:20px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:38px;
+    }
+
+    header p{
+        font-size:16px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Raj Kanaujia</h1>
+    <p>Aspiring <span class="highlight">Data Analyst</span></p>
+    <p>Excel | SQL | Power BI | Python</p>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#github">GitHub</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am Raj Kanaujia, a B.Tech student at Himalayan Institute of
+            Technology and Management, Lucknow, and an aspiring Data Analyst.
+            I have skills in Excel, SQL, Power BI, and Python. I enjoy
+            working with data, creating dashboards, and finding insights
+            that help businesses make informed decisions.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p>Himalayan Institute of Technology and Management, Lucknow</p>
+        <p>Expected Graduation: 2027</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Excel</span>
+        <span>SQL</span>
+        <span>Power BI</span>
+        <span>Python</span>
+        <span>DAX</span>
+        <span>Data Cleaning</span>
+        <span>Data Analysis</span>
+        <span>Dashboard Development</span>
+        <span>Data Visualization</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <div class="project">
+            <h3>Sales Dashboard - Power BI</h3>
+            <p>
+                Built an interactive dashboard to analyze sales performance,
+                profit trends, customer insights, and business KPIs using
+                Power BI and DAX.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>SQL Project</h3>
+            <p>Currently in Progress.</p>
+        </div>
+
+        <div class="project">
+            <h3>Python Data Analysis Project</h3>
+            <p>Currently in Progress.</p>
+        </div>
+    </div>
+</section>
+
+<section id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="card">
+        <ul>
+            <li>Database Certification</li>
+            <li>Data Analyst Summer Training Certificate</li>
+        </ul>
+    </div>
+</section>
+
+<section id="github">
+    <h2>GitHub</h2>
+
+    <div class="card center">
+        <p>Explore my projects and repositories on GitHub.</p>
+
+        <a href="https://github.com/rajkanaujia975-lab"
+           target="_blank"
+           class="btn">
+           Visit GitHub Profile
+        </a>
+    </div>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+
+    <div class="card center">
+        <p>Download my latest resume.</p>
+
+        <a href="CV_FOR_DATA_ANALYST_AND_MIS_EXECUTIVE.pdf"
+           download
+           class="btn">
+           Download Resume
+        </a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+
+    <div class="card center">
+        <p><strong>Email:</strong> rajkanaujia975@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9838723351</p>
+        <p><strong>Location:</strong> Lucknow, Uttar Pradesh, India</p>
+
+        <br>
+
+        <a href="mailto:rajkanaujia975@gmail.com" class="btn">
+            Send Email
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Raj Kanaujia | Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
